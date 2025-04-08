@@ -10,12 +10,22 @@
             font-size: 2rem;
             margin-top: 20%;
         }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <p id="message">버스 도착시간 알려줘 ~</p>
-    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+    <button onclick="goToTopis()">서울시 TOPIS 바로가기</button>
 
     <script>
-        function showRandomMessage() {
-            const messa
+        function goToTopis() {
+            window.location.href = "https://topis.seoul.go.kr/";
+        }
+    </script>
+</body>
+</html>
